@@ -5,6 +5,7 @@ using System.Data;
 
 public class RotationScript : MonoBehaviour
 {
+    //Adaption of the ChatGPT code. Also doesn't work because the target rotation cannot be more than 180f. Revisit if necessary but look to "BasicMovement" script for the final product.
     public float rotationSpeed = 720f;
     public Vector3 translationVelocity = new Vector3(0.03518f, 1.1574f, 0.018f);
     private float targetRotation = 720f;

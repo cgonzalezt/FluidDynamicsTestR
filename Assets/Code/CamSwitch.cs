@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CamSwitch : MonoBehaviour
 {
+    //each camera represented: actual distance and closeup.
     public GameObject CamXY;
     public GameObject CamYZ;
     public GameObject CamXZ;
@@ -15,6 +16,7 @@ public class CamSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //enable one camera and disable the rest based on key press. For input set up check out the Project Settings.
         if (Input.GetButtonDown("XYKey")){
             CamXY.SetActive(true);
             CamYZ.SetActive(false);

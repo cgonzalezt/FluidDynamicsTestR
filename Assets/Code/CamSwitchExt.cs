@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CamSwitchExt : MonoBehaviour
 {
+    //original cam switch project. Set up of seven cameras (including real life and closeup cameras)
     public GameObject Cam1;
     public GameObject Cam2;
     public GameObject Cam3;
@@ -15,6 +16,7 @@ public class CamSwitchExt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //enabling/disabling cameras. For the future it might be helpful to make more efficient code (avoding repetition!)
         if (Input.GetButtonDown("XYKey")){
             Cam1.SetActive(true);
             Cam2.SetActive(false);
